@@ -1,0 +1,13 @@
+.statistic {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.statistic:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.statistics {
+  margin-left: 40vw;
+}

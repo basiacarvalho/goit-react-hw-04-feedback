@@ -1,0 +1,35 @@
+.button {
+  padding: 15px 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  color: #757575;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button:first-letter {
+  text-transform: capitalize;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #bbbbbb;
+  color: #fff;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback {
+  margin-bottom: 80px;
+}
