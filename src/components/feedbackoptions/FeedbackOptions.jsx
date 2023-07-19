@@ -1,17 +1,17 @@
 import css from './FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options }) => {
   return (
     <div className={css.feedback}>
       <div className={css.buttons}>
         {options.map(option => (
           <button
-            onClick={() => onLeaveFeedback(option)}
-            key={option}
+            onClick={option.incrementFunction}
+            key={option.name}
             type="button"
             className={css.button}
           >
-            {option}
+            {option.name}
           </button>
         ))}
       </div>
