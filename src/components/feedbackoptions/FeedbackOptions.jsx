@@ -1,4 +1,5 @@
 import css from './FeedbackOptions.module.css';
+import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({ options }) => {
   return (
@@ -17,4 +18,8 @@ export const FeedbackOptions = ({ options }) => {
       </div>
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
 };
